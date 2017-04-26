@@ -2,8 +2,8 @@
   <section class="reminders">
     <h1>Reminders</h1>
 
-    <form>
-      <input type="text" class="form-new__input">
+    <form onSubmit={{action handleSubmit}}>
+      <input type="text" value={{newTodoText}} class="form-new__input" onKeyUp={{action handleKeyUp}}>
     </form>
 
     <ul class="todo">

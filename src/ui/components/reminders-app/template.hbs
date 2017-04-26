@@ -7,8 +7,9 @@
     </form>
 
     <ul class="todo">
-      <li class="todo__item">First item</li>
-      <li class="todo__item">Second item</li>
+      {{#each todos key="@index" as |item|}}
+        <li class="todo__item">{{item}}</li>
+      {{/each}}
     </ul>
   </section>
 </div>

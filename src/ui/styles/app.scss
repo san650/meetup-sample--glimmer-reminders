@@ -1,3 +1,31 @@
 h1 {
   color: #444;
 }
+
+.reminders {
+  width: 400px;
+  margin: 10px auto;
+}
+
+.form-new__input {
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.todo {
+  list-style-type: none;
+  margin: 20px 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.todo__item {
+  margin-bottom: 10px;
+  padding: 20px 15px;
+  border: 1px solid gray;
+  background-color: rgba(0,0,0,.1);
+  cursor: pointer;
+}

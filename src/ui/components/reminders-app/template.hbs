@@ -2,14 +2,7 @@
   <section class="reminders">
     <h1>Reminders</h1>
 
-    <form onSubmit={{action handleSubmit}}>
-      <input type="text" value={{newTodoText}} class="form-new__input" onKeyUp={{action handleKeyUp}}>
-    </form>
-
-    <ul class="todo">
-      {{#each todos key="@index" as |item|}}
-        <li class="todo__item">{{item}}</li>
-      {{/each}}
-    </ul>
+    <form-new @onCreate={{action handleCreate}} />
+    <todo-list @items={{todos}} />
   </section>
 </div>

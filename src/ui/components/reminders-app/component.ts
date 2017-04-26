@@ -1,19 +1,16 @@
 import Component, { tracked } from "@glimmer/component";
 
 export default class Reminders extends Component {
-  @tracked newTodoText = ''
   @tracked todos = [
     'First item',
     'Second item',
     'Third item'
   ]
 
-  handleSubmit(event) {
-    event.preventDefault();
-
+  handleCreate(item) {
     this.todos = [
       ...this.todos,
-      this.newTodoText
+      item
     ];
   }
 

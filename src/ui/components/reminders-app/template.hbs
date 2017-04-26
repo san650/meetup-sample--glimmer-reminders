@@ -3,6 +3,7 @@
     <h1>Reminders</h1>
 
     <form-new @onCreate={{action handleCreate}} />
+      <p>{{count}}</p>
     <todo-list @items={{todos}} />
   </section>
 </div>

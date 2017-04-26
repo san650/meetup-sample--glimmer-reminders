@@ -7,6 +7,18 @@ export default class Reminders extends Component {
     'Third item'
   ]
 
+  @tracked("todos")
+  get count() {
+    switch(this.todos.length) {
+      case 0;
+        return "no items";
+      case 1:
+        return "one item";
+      default:
+        return `${this.todos.length} items`;
+    }
+  }
+
   handleCreate(item) {
     this.todos = [
       ...this.todos,
